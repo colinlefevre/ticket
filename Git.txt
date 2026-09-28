@@ -1,0 +1,31 @@
+PS C:\wamp64\www\ticket> git init
+Initialized empty Git repository in C:/wamp64/www/ticket/.git/
+PS C:\wamp64\www\ticket> git add index.php
+PS C:\wamp64\www\ticket> git commit "formulaire"
+error: pathspec 'formulaire' did not match any file(s) known to git
+PS C:\wamp64\www\ticket> git commit -m "formulaire"
+[master (root-commit) 8695cfc] formulaire
+ 1 file changed, 14 insertions(+)
+ create mode 100644 index.php
+PS C:\wamp64\www\ticket> git add index.php
+PS C:\wamp64\www\ticket> git commit -m "sélection"
+[master 2ba7d62] sélection
+ 1 file changed, 12 insertions(+)
+PS C:\wamp64\www\ticket> git add index.php
+PS C:\wamp64\www\ticket> git commit -m "traitement du bon code et du 0"
+[master 827eb94] traitement du bon code et du 0
+ 1 file changed, 32 insertions(+), 2 deletions(-)
+PS C:\wamp64\www\ticket> git remote add origin "https://github.com/colinlefevre/ticket"
+PS C:\wamp64\www\ticket> git branch -M main
+PS C:\wamp64\www\ticket> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.36 KiB | 1.36 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/colinlefevre/ticket
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
